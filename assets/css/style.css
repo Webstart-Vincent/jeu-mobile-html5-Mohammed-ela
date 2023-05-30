@@ -1,0 +1,88 @@
+canvas {
+    width: 60%;
+    aspect-ratio: 480/360;
+    border: solid;
+    margin:0 auto;
+}
+
+body{
+    display: grid;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #A6A6A6;
+}
+
+
+.instruction{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.portrait{
+    display:none;
+}
+
+.parent{
+    position: relative;
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    gap: 10px;
+
+}
+
+.bouton{
+
+    margin: 360px -200px auto auto
+   
+}
+
+.touche{
+
+
+    margin: 360px auto 0px -200px;
+}
+
+
+@media screen and (orientation : landscape) {
+    
+    canvas {
+        width: 100%;
+        aspect-ratio: 480/360;
+        border: solid;
+        margin:0 auto;
+}
+
+.bouton{
+
+    margin: auto auto 50px auto;
+   
+}
+
+.touche{
+
+
+    margin: auto auto 50px auto;
+}
+
+    
+}
+
+
+@media screen and (orientation: portrait) {
+
+.portrait{
+display:block;
+text-align: center;
+color: red;
+font-size: 25px;
+background: black;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 200;
+margin: auto 0 auto 0;
+}
+
+canvas,.bouton,.touche{
+    display: none;
+}
+
+}
